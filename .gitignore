@@ -1,0 +1,43 @@
+# Python environments, caches, and local test state
+/.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS and editor files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Course briefs, reports, notes, recordings, and local documentation
+*.pdf
+*.docx
+*.pptx
+*.mp4
+*.mov
+*.avi
+/docs/
+/tools/generate_report.py
+
+# Generated datasets and personal images
+/dataset/demo/
+/dataset/manifest.csv
+/dataset/personal/*
+!/dataset/personal/README.md
+
+# Generated processing/evaluation outputs and scratch files
+/output/
+/tmp/
+*.log
+*.zip

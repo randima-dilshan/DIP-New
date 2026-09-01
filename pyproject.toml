@@ -1,0 +1,10 @@
+[project]
+name = "heritageguard"
+version = "1.0.0"
+description = "Classical OpenCV old-photograph damage detection and restoration"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = ["."]
