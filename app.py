@@ -285,29 +285,11 @@ def batch_workflow(config: ProcessingConfig) -> None:
         )
 
 
-def evidence_page() -> None:
-    st.markdown("### Method and rubric evidence")
-    st.markdown(
-        """
-        **Specific problem:** detect cracks and stains in digitized old photographs, restore detected regions, and quantify the result.
-
-        **Integrated workflow:** validation and metadata → ROI/rotation → Grayscale/Lab/HSV conversion → illumination correction and CLAHE → Gaussian/median comparison → Otsu/adaptive thresholding → Canny edges and contours → morphological and Lab region segmentation → shape/area/texture features → Telea restoration → decision, score, export, and evaluation.
-
-        The downloadable output contains the images, parameters, and structured measurements needed to reproduce each result. See `docs/RUBRIC_TRACEABILITY.md` and `docs/VIVA_GUIDE.md` for the complete evidence map and explanation prompts.
-        """
-    )
-    st.warning(
-        "Academic-integrity checkpoint: the bundled 30-image dataset is synthetic demonstration data. Add and certify at least ten images you personally captured or produced before submission."
-    )
-
-
 st.title("HeritageGuard")
 st.caption("Old-photograph damage detection, measurable restoration, and evaluation — Python + OpenCV")
 config = configuration_panel()
-single_tab, batch_tab, evidence_tab = st.tabs(["Single image", "Batch / folder", "Rubric evidence"])
+single_tab, batch_tab = st.tabs(["Single image", "Batch / folder"])
 with single_tab:
     single_workflow(config)
 with batch_tab:
     batch_workflow(config)
-with evidence_tab:
-    evidence_page()
