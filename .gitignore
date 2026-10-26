@@ -21,13 +21,13 @@ __pycache__/
 .streamlit/secrets.toml
 
 # Course briefs, reports, notes, recordings, and local documentation
-*.pdf
-*.docx
+
+
 *.pptx
 *.mp4
 *.mov
 *.avi
-/docs/
+
 /tools/generate_report.py
 
 # Generated datasets and personal images
