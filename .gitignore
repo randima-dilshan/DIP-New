@@ -33,8 +33,6 @@ __pycache__/
 # Generated datasets and personal images
 /dataset/demo/
 /dataset/manifest.csv
-/dataset/personal/*
-!/dataset/personal/README.md
 
 # Generated processing/evaluation outputs and scratch files
 /output/
