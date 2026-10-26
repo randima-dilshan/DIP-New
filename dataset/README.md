@@ -1,4 +1,3 @@
-
 ## Included demonstration data
 
 - 20 images in the `development` split;
